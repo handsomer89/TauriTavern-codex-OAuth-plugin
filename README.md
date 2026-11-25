@@ -1,6 +1,6 @@
 # TauriTavern Plus Bridge
 
-TauriTavern 安卓版扩展，配合同一部手机上的 Termux 桥接服务，通过 OpenAI 官方「使用 ChatGPT 登录」开源 OAuth 流程接入。符合条件的 ChatGPT Plus 账号授权后，普通聊天可使用订阅额度，无需填写 OpenAI API Key。模型以登录账号返回的列表为准。
+TauriTavern 安卓版扩展，配合同一部手机上的 TauriTavern Plus 伴侣 App 或 Termux 桥接服务，通过 OpenAI 官方「使用 ChatGPT 登录」开源 OAuth 流程接入。符合条件的 ChatGPT Plus 账号授权后，普通聊天可使用订阅额度，无需填写 OpenAI API Key。模型以登录账号返回的列表为准。
 
 ## 在 TauriTavern 里安装扩展
 
@@ -12,7 +12,13 @@ https://github.com/handsomer89/TauriTavern-codex-OAuth-plugin.git
 
 扩展按 TauriTavern v2.4.0 的接口编写。如果之前通过本机地址装过旧版，可以在「管理扩展」里移除旧版，再通过上面的链接安装。
 
+选择本机地址后，可直接勾选「流式传输（普通聊天）」。该开关同步到 TauriTavern 聊天补全的生成设置。请从聊天框发普通消息来验证逐段输出。「发送测试消息」使用非流式请求。
+
 ## 在同一部手机启动 OAuth 服务
+
+使用伴侣 App 时，在 App 内完成「使用 ChatGPT 登录」，启动桥接并复制本机密钥，再按下文配置 TauriTavern。「最近一次生成」会显示实际档位、流式模式和各阶段耗时。
+
+### Termux 方式
 
 在 [Termux](https://termux.dev/en/) 中执行：
 

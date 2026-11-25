@@ -1,0 +1,10 @@
+{
+    "display_name": "TauriTavern Plus Bridge",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "author": "TauriTavern Plus Bridge contributors",
+    "version": "0.1.1",
+    "homePage": "https://github.com/handsomer89/TauriTavern-codex-OAuth-plugin"
+}
